@@ -698,7 +698,6 @@ If WINDOW is t, redisplay pages in all windows."
         (pdf-view-display-page
          (pdf-view-current-page window)
          window)
-      (print "hello")
       (dolist (win (get-buffer-window-list nil nil t))
         (pdf-view-display-page
          (pdf-view-current-page win)
